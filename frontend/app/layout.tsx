@@ -34,7 +34,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col bg-[#FAFAFA] text-zinc-900 selection:bg-blue-600/20 selection:text-blue-900">
+      <body className="min-h-full flex flex-col bg-[#FAFAFA] text-zinc-900 selection:bg-yellow-200 selection:text-yellow-950">
         <AuthProvider>
           <Suspense fallback={<div className="h-16 sm:h-20 bg-white border-b border-zinc-200" />}>
             <Navbar />

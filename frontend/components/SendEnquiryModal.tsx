@@ -118,7 +118,7 @@ export const SendEnquiryModal: React.FC<SendEnquiryModalProps> = ({
           <p className="text-sm text-zinc-600 max-w-md mt-1.5 mb-6">
             Directly transmitted to{' '}
             <strong className="text-zinc-900">{productionHouse.name}</strong>. Response expected within{' '}
-            <strong className="text-blue-600">
+            <strong className="text-amber-800">
               {productionHouse.responseRateHours} hours
             </strong>
             .
@@ -131,7 +131,7 @@ export const SendEnquiryModal: React.FC<SendEnquiryModalProps> = ({
             </div>
             <div className="flex justify-between">
               <span className="text-zinc-500">Category:</span>
-              <span className="font-semibold text-blue-600">{category}</span>
+              <span className="font-semibold text-amber-800">{category}</span>
             </div>
             <div className="flex justify-between">
               <span className="text-zinc-500">Budget:</span>
@@ -166,7 +166,7 @@ export const SendEnquiryModal: React.FC<SendEnquiryModalProps> = ({
             <div className="flex-1 min-w-0">
               <h4 className="text-sm font-bold text-zinc-900 truncate">{productionHouse.name}</h4>
               <p className="text-xs text-zinc-500 flex items-center gap-1.5">
-                <Clock className="w-3.5 h-3.5 text-blue-600" />
+                <Clock className="w-3.5 h-3.5 text-amber-600" />
                 Response: ~{productionHouse.responseRateHours}h • {productionHouse.location}
               </p>
             </div>
@@ -188,7 +188,7 @@ export const SendEnquiryModal: React.FC<SendEnquiryModalProps> = ({
               <select
                 value={category}
                 onChange={(e) => setCategory(e.target.value as ServiceCategory)}
-                className="w-full bg-white text-zinc-900 text-sm rounded-xl border border-zinc-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 px-3.5 py-2.5 outline-none cursor-pointer"
+                className="w-full bg-white text-zinc-900 text-sm rounded-xl border border-zinc-200 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 px-3.5 py-2.5 outline-none cursor-pointer"
               >
                 {POPULAR_CATEGORIES.map((cat) => (
                   <option key={cat.name} value={cat.name} className="bg-white text-zinc-900">
@@ -205,7 +205,7 @@ export const SendEnquiryModal: React.FC<SendEnquiryModalProps> = ({
               <select
                 value={budgetRange}
                 onChange={(e) => setBudgetRange(e.target.value)}
-                className="w-full bg-white text-zinc-900 text-sm rounded-xl border border-zinc-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 px-3.5 py-2.5 outline-none cursor-pointer"
+                className="w-full bg-white text-zinc-900 text-sm rounded-xl border border-zinc-200 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 px-3.5 py-2.5 outline-none cursor-pointer"
               >
                 <option value="Under ₹1,00,000" className="bg-white text-zinc-900">Under ₹1,00,000 (Social / Collateral)</option>
                 <option value="₹1,00,000 - ₹5,00,000" className="bg-white text-zinc-900">₹1,00,000 - ₹5,00,000 (Mid-tier Shoot / Packaging)</option>
@@ -230,7 +230,7 @@ export const SendEnquiryModal: React.FC<SendEnquiryModalProps> = ({
               placeholder="Describe deliverables, target channels, shoot dates, and references..."
               value={description}
               onChange={(e) => setDescription(e.target.value)}
-              className="w-full bg-white text-zinc-900 placeholder-zinc-400 text-sm rounded-xl border border-zinc-200 focus:border-blue-600 focus:ring-2 focus:ring-blue-100 p-3.5 outline-none resize-none"
+              className="w-full bg-white text-zinc-900 placeholder-zinc-400 text-sm rounded-xl border border-zinc-200 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 p-3.5 outline-none resize-none"
             />
           </div>
 

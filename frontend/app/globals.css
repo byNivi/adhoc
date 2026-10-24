@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-adhoc-primary: #2563EB;
-  --color-adhoc-lightblue: #EFF6FF;
-  --color-adhoc-softsky: #F8FAFC;
+  --color-adhoc-primary: #FDE047;
+  --color-adhoc-primary-hover: #FACC15;
+  --color-adhoc-lightblue: #FEFCE8;
+  --color-adhoc-softsky: #FEF9C3;
   --color-adhoc-bg: #FAFAFA;
   --color-adhoc-surface: #FFFFFF;
   --color-adhoc-card: #FFFFFF;
@@ -13,11 +14,13 @@
   --color-adhoc-muted: #71717A;
   --color-adhoc-border: #E4E4E7;
   --color-adhoc-border-light: #F4F4F5;
-  --color-adhoc-accent: #2563EB;
+  --color-adhoc-accent: #FACC15;
+  --color-adhoc-accent-dark: #854D0E;
 }
 
 :root {
-  --adhoc-primary: #2563EB;
+  --adhoc-primary: #FDE047;
+  --adhoc-primary-hover: #FACC15;
   --adhoc-bg: #FAFAFA;
   --adhoc-surface: #FFFFFF;
   --adhoc-card: #FFFFFF;
@@ -27,7 +30,8 @@
   --adhoc-muted: #71717A;
   --adhoc-border: #E4E4E7;
   --adhoc-border-hover: #D4D4D8;
-  --adhoc-accent: #2563EB;
+  --adhoc-accent: #FACC15;
+  --adhoc-accent-dark: #854D0E;
 }
 
 html {
@@ -51,8 +55,8 @@ body {
   box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.06), 0 4px 6px -2px rgba(0, 0, 0, 0.03);
 }
 
-.shadow-glow-blue {
-  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.2);
+.shadow-glow-yellow {
+  box-shadow: 0 4px 14px 0 rgba(250, 204, 21, 0.28);
 }
 
 .shadow-soft-hover {
@@ -66,7 +70,7 @@ body {
 
 /* Subtle Gradient Accents */
 .bg-hero-radial {
-  background: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.05) 0%, rgba(250, 250, 250, 0) 70%);
+  background: radial-gradient(circle at 50% 0%, rgba(253, 224, 71, 0.15) 0%, rgba(250, 250, 250, 0) 70%);
 }
 
 .bg-glass {

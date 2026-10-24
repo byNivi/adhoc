@@ -25,8 +25,8 @@ export const FloatingAIAssistant: React.FC = () => {
             <X className="w-3.5 h-3.5" />
           </button>
           <div className="flex items-start gap-2.5 pr-4">
-            <div className="w-8 h-8 rounded-xl bg-blue-600 flex items-center justify-center text-white shrink-0 shadow-xs">
-              <Sparkles className="w-4 h-4" />
+            <div className="w-8 h-8 rounded-xl bg-yellow-300 border border-yellow-400 flex items-center justify-center text-zinc-950 shrink-0 shadow-xs">
+              <Sparkles className="w-4 h-4 text-zinc-950" />
             </div>
             <div>
               <p className="text-xs font-bold text-zinc-900">Need Studio Matching?</p>
@@ -35,7 +35,7 @@ export const FloatingAIAssistant: React.FC = () => {
               </p>
               <Link
                 href="/ai-assistant"
-                className="mt-2 inline-flex items-center gap-1 text-[11px] font-semibold text-blue-600 hover:text-blue-700 hover:underline"
+                className="mt-2 inline-flex items-center gap-1 text-[11px] font-semibold text-amber-800 hover:text-amber-900 hover:underline"
               >
                 <span>Open Assistant</span>
                 <ArrowRight className="w-3 h-3" />
@@ -51,7 +51,7 @@ export const FloatingAIAssistant: React.FC = () => {
           className="h-12 px-4 rounded-full bg-zinc-900 hover:bg-black text-white shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center gap-2 font-medium text-sm cursor-pointer border border-zinc-800"
           aria-label="Open AI Creative Assistant"
         >
-          <Bot className="w-4.5 h-4.5 text-blue-400" />
+          <Bot className="w-4.5 h-4.5 text-yellow-300" />
           <span className="font-semibold tracking-wide">AI Assistant</span>
           <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
         </button>

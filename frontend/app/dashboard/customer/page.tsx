@@ -41,7 +41,7 @@ export default function CustomerDashboardPage() {
         {/* Welcome Section */}
         <div className="bg-white rounded-2xl p-6 border border-zinc-200 shadow-soft flex flex-col md:flex-row md:items-center justify-between gap-5">
           <div className="space-y-1">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">
+            <span className="text-[10px] font-semibold uppercase tracking-wider text-yellow-950 bg-yellow-100 border border-yellow-300 px-2 py-0.5 rounded">
               Brand Portal
             </span>
             <h1 className="text-xl sm:text-2xl font-extrabold text-zinc-900 tracking-tight">
@@ -71,7 +71,7 @@ export default function CustomerDashboardPage() {
           <div className="bg-white p-4 rounded-xl border border-zinc-200 shadow-2xs">
             <span className="text-xs text-zinc-500">Active Enquiries</span>
             <p className="text-2xl font-black text-zinc-900 mt-1">{customerEnquiries.length}</p>
-            <span className="text-[11px] text-blue-600 font-medium">In pipeline</span>
+            <span className="text-[11px] text-amber-800 font-semibold">In pipeline</span>
           </div>
 
           <div className="bg-white p-4 rounded-xl border border-zinc-200 shadow-2xs">
@@ -88,7 +88,7 @@ export default function CustomerDashboardPage() {
 
           <div className="bg-white p-4 rounded-xl border border-zinc-200 shadow-2xs">
             <span className="text-xs text-zinc-500">Delivered</span>
-            <p className="text-2xl font-black text-blue-600 mt-1">{completedProjects.length}</p>
+            <p className="text-2xl font-black text-zinc-900 mt-1">{completedProjects.length}</p>
             <span className="text-[11px] text-emerald-600 font-medium">100% SLA met</span>
           </div>
         </div>
@@ -141,7 +141,7 @@ export default function CustomerDashboardPage() {
                         Studio:{' '}
                         <Link
                           href={`/production-houses/${enq.productionHouseId}`}
-                          className="font-medium text-blue-600 hover:underline"
+                          className="font-medium text-amber-800 hover:underline"
                         >
                           {enq.productionHouseName}
                         </Link>{' '}
@@ -219,7 +219,7 @@ export default function CustomerDashboardPage() {
                           className="w-11 h-11 rounded-xl object-cover border border-zinc-200 bg-white"
                         />
                         <div>
-                          <h4 className="text-xs font-bold text-zinc-900 group-hover:text-blue-600 transition-colors">
+                          <h4 className="text-xs font-bold text-zinc-900 group-hover:text-amber-800 transition-colors">
                             {house.name}
                           </h4>
                           <p className="text-[11px] text-zinc-500">{house.location}</p>
@@ -286,9 +286,9 @@ export default function CustomerDashboardPage() {
                   </div>
 
                   <div className="w-full sm:w-44 space-y-1 text-right">
-                    <span className="text-xs font-bold text-blue-600">75% Complete</span>
+                    <span className="text-xs font-bold text-amber-800">75% Complete</span>
                     <div className="w-full h-1.5 bg-zinc-200 rounded-full overflow-hidden">
-                      <div className="h-full bg-blue-600 rounded-full w-3/4" />
+                      <div className="h-full bg-yellow-400 rounded-full w-3/4" />
                     </div>
                   </div>
                 </div>

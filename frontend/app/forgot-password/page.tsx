@@ -27,11 +27,11 @@ export default function ForgotPasswordPage() {
       <div className="w-full max-w-md space-y-6">
         <div className="text-center space-y-1.5">
           <Link href="/" className="inline-flex items-center gap-2">
-            <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white font-extrabold text-base shadow-glow-blue">
+            <div className="w-9 h-9 rounded-xl bg-yellow-300 border border-yellow-400 flex items-center justify-center text-zinc-950 font-black text-base shadow-glow-yellow">
               ad
             </div>
             <span className="text-2xl font-black text-zinc-900 tracking-tight">
-              adhoc<span className="text-blue-600">.</span>
+              adhoc<span className="text-amber-500">.</span>
             </span>
           </Link>
           <h1 className="text-xl font-bold text-zinc-900">Reset Password</h1>

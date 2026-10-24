@@ -222,7 +222,7 @@ ${brief.deliverables.map((d) => `- ${d}`).join('\n')}
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-5 mb-6 border-b border-zinc-200 gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 flex items-center justify-center text-blue-600">
+            <div className="w-10 h-10 rounded-xl bg-yellow-100 border border-yellow-300 flex items-center justify-center text-yellow-950">
               <Bot className="w-5 h-5" />
             </div>
             <div>
@@ -264,8 +264,8 @@ ${brief.deliverables.map((d) => `- ${d}`).join('\n')}
                   className={`flex gap-3 ${isAssistant ? 'justify-start' : 'justify-end'}`}
                 >
                   {isAssistant && (
-                    <div className="w-7 h-7 rounded-lg bg-blue-50 border border-blue-200 text-blue-600 flex items-center justify-center shrink-0 text-xs font-bold mt-1">
-                      <Sparkles className="w-3.5 h-3.5 text-blue-600" />
+                    <div className="w-7 h-7 rounded-lg bg-yellow-100 border border-yellow-300 text-amber-800 flex items-center justify-center shrink-0 text-xs font-bold mt-1">
+                      <Sparkles className="w-3.5 h-3.5 text-amber-700" />
                     </div>
                   )}
 
@@ -275,7 +275,7 @@ ${brief.deliverables.map((d) => `- ${d}`).join('\n')}
                       className={`p-3.5 rounded-xl text-xs sm:text-sm leading-relaxed ${
                         isAssistant
                           ? 'bg-zinc-50 text-zinc-800 border border-zinc-200/80 shadow-2xs'
-                          : 'bg-blue-600 text-white shadow-2xs'
+                          : 'bg-yellow-200 text-zinc-950 border border-yellow-300 font-medium shadow-2xs'
                       }`}
                     >
                       {msg.content}
@@ -288,7 +288,7 @@ ${brief.deliverables.map((d) => `- ${d}`).join('\n')}
                           <button
                             key={reply}
                             onClick={() => handleSendMessage(reply)}
-                            className="px-3 py-1.5 rounded-xl bg-white hover:bg-zinc-50 text-zinc-700 hover:text-zinc-900 border border-zinc-200 hover:border-zinc-300 text-xs transition-all cursor-pointer text-left font-medium shadow-2xs"
+                            className="px-3 py-1.5 rounded-xl bg-white hover:bg-yellow-50 text-zinc-700 hover:text-amber-950 border border-zinc-200 hover:border-yellow-300 text-xs transition-all cursor-pointer text-left font-medium shadow-2xs"
                           >
                             {reply}
                           </button>
@@ -298,15 +298,15 @@ ${brief.deliverables.map((d) => `- ${d}`).join('\n')}
 
                     {/* Structured Project Brief Card */}
                     {msg.generatedBrief && (
-                      <div className="bg-zinc-50/70 rounded-xl border border-blue-200 p-4 space-y-3 text-left">
+                      <div className="bg-yellow-50/50 rounded-xl border border-yellow-300 p-4 space-y-3 text-left">
                         <div className="flex items-center justify-between pb-2.5 border-b border-zinc-200">
                           <div className="flex items-center gap-2">
-                            <FileText className="w-4 h-4 text-blue-600" />
+                            <FileText className="w-4 h-4 text-amber-700" />
                             <h3 className="text-xs font-bold text-zinc-900 uppercase tracking-wider">
                               Commercial Brief Spec
                             </h3>
                           </div>
-                          <Badge variant="blue" size="sm">
+                          <Badge variant="yellow" size="sm">
                             {msg.generatedBrief.category}
                           </Badge>
                         </div>
@@ -441,13 +441,13 @@ ${brief.deliverables.map((d) => `- ${d}`).join('\n')}
             {/* Typing Indicator */}
             {isTyping && (
               <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 rounded-lg bg-blue-50 border border-blue-200 text-blue-600 flex items-center justify-center text-xs font-bold">
-                  <Sparkles className="w-3.5 h-3.5 text-blue-600" />
+                <div className="w-7 h-7 rounded-lg bg-yellow-100 border border-yellow-300 text-amber-800 flex items-center justify-center text-xs font-bold">
+                  <Sparkles className="w-3.5 h-3.5 text-amber-700" />
                 </div>
                 <div className="p-2.5 bg-zinc-50 rounded-xl border border-zinc-200 flex items-center gap-1.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-bounce" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-bounce [animation-delay:0.2s]" />
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 animate-bounce [animation-delay:0.4s]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 animate-bounce" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 animate-bounce [animation-delay:0.2s]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-yellow-500 animate-bounce [animation-delay:0.4s]" />
                 </div>
               </div>
             )}
@@ -467,7 +467,7 @@ ${brief.deliverables.map((d) => `- ${d}`).join('\n')}
               placeholder="Type campaign scope, budget, or specifications..."
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}
-              className="flex-1 bg-zinc-50 text-xs text-zinc-900 placeholder-zinc-400 px-4 py-2.5 rounded-xl border border-zinc-200 focus:border-blue-600 focus:bg-white outline-none transition-all"
+              className="flex-1 bg-zinc-50 text-xs text-zinc-900 placeholder-zinc-400 px-4 py-2.5 rounded-xl border border-zinc-200 focus:border-yellow-500 focus:bg-white outline-none transition-all"
             />
             <Button
               type="submit"

@@ -20,7 +20,7 @@ export const Button: React.FC<ButtonProps> = ({
   disabled,
   ...props
 }) => {
-  const baseStyles = 'inline-flex items-center justify-center font-medium transition-all duration-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500/40 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100 cursor-pointer';
+  const baseStyles = 'inline-flex items-center justify-center font-medium transition-all duration-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-yellow-400/50 active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed disabled:active:scale-100 cursor-pointer';
 
   const sizeStyles = {
     sm: 'text-xs px-3 py-1.5 gap-1.5',
@@ -29,11 +29,11 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   const variantStyles = {
-    primary: 'bg-blue-600 hover:bg-blue-700 text-white font-medium shadow-xs border border-blue-600',
+    primary: 'bg-yellow-300 hover:bg-yellow-400 text-zinc-950 font-semibold shadow-xs border border-yellow-400/80',
     secondary: 'bg-white hover:bg-zinc-50 text-zinc-900 border border-zinc-200 shadow-xs hover:border-zinc-300',
     outline: 'bg-white hover:bg-zinc-50 text-zinc-700 hover:text-zinc-900 border border-zinc-200 hover:border-zinc-300',
     ghost: 'bg-transparent hover:bg-zinc-100 text-zinc-600 hover:text-zinc-900',
-    soft: 'bg-blue-50 hover:bg-blue-100/80 text-blue-700 border border-blue-100',
+    soft: 'bg-yellow-50 hover:bg-yellow-100 text-yellow-900 border border-yellow-200/80',
     danger: 'bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200',
   };
 

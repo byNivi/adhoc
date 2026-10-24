@@ -12,11 +12,11 @@ export const Footer: React.FC = () => {
           {/* Brand Column */}
           <div className="col-span-2 space-y-3">
             <Link href="/" className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-tr from-blue-600 to-blue-500 flex items-center justify-center text-white font-extrabold text-base">
+              <div className="w-8 h-8 rounded-xl bg-yellow-300 border border-yellow-400 flex items-center justify-center text-zinc-950 font-black text-base">
                 ad
               </div>
               <span className="text-lg font-black text-zinc-900 tracking-tight">
-                adhoc<span className="text-blue-600">.</span>
+                adhoc<span className="text-amber-500">.</span>
               </span>
             </Link>
             <p className="text-xs text-zinc-500 max-w-sm leading-relaxed">
@@ -78,11 +78,11 @@ export const Footer: React.FC = () => {
               <li>
                 <Link href="/ai-assistant" className="hover:text-zinc-900 transition-colors flex items-center gap-1">
                   <span>AI Brief Assistant</span>
-                  <Sparkles className="w-3 h-3 text-blue-600" />
+                  <Sparkles className="w-3 h-3 text-amber-600" />
                 </Link>
               </li>
               <li>
-                <Link href="/signup?role=production_house" className="hover:text-blue-600 transition-colors font-medium text-blue-600">
+                <Link href="/signup?role=production_house" className="hover:text-amber-900 transition-colors font-semibold text-amber-800">
                   List Your Studio
                 </Link>
               </li>
@@ -106,15 +106,15 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2.5 text-xs text-zinc-600">
               <li className="flex items-center gap-2">
-                <Mail className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                <Mail className="w-3.5 h-3.5 text-amber-600 shrink-0" />
                 <span>support@adhoc.creative</span>
               </li>
               <li className="flex items-center gap-2">
-                <Phone className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                <Phone className="w-3.5 h-3.5 text-amber-600 shrink-0" />
                 <span>+91 22 8900 1234</span>
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="w-3.5 h-3.5 text-blue-600 shrink-0 mt-0.5" />
+                <MapPin className="w-3.5 h-3.5 text-amber-600 shrink-0 mt-0.5" />
                 <span>Bandra West, Mumbai</span>
               </li>
             </ul>

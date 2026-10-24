@@ -63,11 +63,11 @@ export default function LoginPage() {
         {/* Brand Header */}
         <div className="text-center space-y-1.5">
           <Link href="/" className="inline-flex items-center gap-2">
-            <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white font-extrabold text-base shadow-glow-blue">
+            <div className="w-9 h-9 rounded-xl bg-yellow-300 border border-yellow-400 flex items-center justify-center text-zinc-950 font-black text-base shadow-glow-yellow">
               ad
             </div>
             <span className="text-2xl font-black text-zinc-900 tracking-tight">
-              adhoc<span className="text-blue-600">.</span>
+              adhoc<span className="text-amber-500">.</span>
             </span>
           </Link>
           <h1 className="text-xl font-bold text-zinc-900">Sign In</h1>
@@ -115,14 +115,14 @@ export default function LoginPage() {
               <button
                 type="button"
                 onClick={() => handleDemoLogin('customer')}
-                className="flex-1 py-1.5 bg-white hover:bg-zinc-100 text-zinc-700 text-xs font-semibold rounded-lg border border-zinc-200/90 shadow-xs transition-colors cursor-pointer"
+                className="flex-1 py-1.5 bg-white hover:bg-yellow-50 text-zinc-700 text-xs font-semibold rounded-lg border border-zinc-200/90 shadow-xs transition-colors cursor-pointer"
               >
                 Demo as Brand
               </button>
               <button
                 type="button"
                 onClick={() => handleDemoLogin('production_house')}
-                className="flex-1 py-1.5 bg-white hover:bg-zinc-100 text-zinc-700 text-xs font-semibold rounded-lg border border-zinc-200/90 shadow-xs transition-colors cursor-pointer"
+                className="flex-1 py-1.5 bg-white hover:bg-yellow-50 text-zinc-700 text-xs font-semibold rounded-lg border border-zinc-200/90 shadow-xs transition-colors cursor-pointer"
               >
                 Demo as Studio
               </button>
@@ -160,7 +160,7 @@ export default function LoginPage() {
               <div className="flex justify-end mt-1">
                 <Link
                   href="/forgot-password"
-                  className="text-[11px] text-blue-600 hover:underline font-medium"
+                  className="text-[11px] text-amber-800 hover:underline font-medium"
                 >
                   Forgot password?
                 </Link>
@@ -181,7 +181,7 @@ export default function LoginPage() {
 
           <div className="pt-3 border-t border-zinc-100 text-center text-xs text-zinc-500">
             No account?{' '}
-            <Link href="/signup" className="text-blue-600 hover:underline font-medium">
+            <Link href="/signup" className="text-amber-800 hover:underline font-semibold">
               Create one
             </Link>
           </div>

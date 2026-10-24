@@ -139,10 +139,10 @@ export default function ProductionHouseDashboardPage() {
           <div className="bg-zinc-50 p-3 rounded-xl border border-zinc-200 sm:w-64 space-y-1.5">
             <div className="flex items-center justify-between text-xs">
               <span className="text-zinc-600 font-medium">Profile Strength</span>
-              <span className="font-bold text-blue-600">85%</span>
+              <span className="font-bold text-amber-800">85%</span>
             </div>
             <div className="w-full h-1.5 bg-zinc-200 rounded-full overflow-hidden">
-              <div className="h-full bg-blue-600 rounded-full w-[85%]" />
+              <div className="h-full bg-yellow-400 rounded-full w-[85%]" />
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@ export default function ProductionHouseDashboardPage() {
           <div className="bg-white p-4 rounded-xl border border-zinc-200/90 shadow-soft">
             <div className="flex items-center justify-between text-xs text-zinc-500 mb-1">
               <span>Total Enquiries</span>
-              <Building2 className="w-3.5 h-3.5 text-blue-600" />
+              <Building2 className="w-3.5 h-3.5 text-amber-700" />
             </div>
             <p className="text-2xl font-black text-zinc-900">{studioEnquiries.length}</p>
             <span className="text-[11px] text-zinc-500">+4 this week</span>
@@ -179,7 +179,7 @@ export default function ProductionHouseDashboardPage() {
           <div className="bg-white p-4 rounded-xl border border-zinc-200/90 shadow-soft">
             <div className="flex items-center justify-between text-xs text-zinc-500 mb-1">
               <span>Pipeline Value</span>
-              <IndianRupee className="w-3.5 h-3.5 text-blue-600" />
+              <IndianRupee className="w-3.5 h-3.5 text-amber-700" />
             </div>
             <p className="text-2xl font-black text-zinc-900">
               {formatINR(totalRevenue)}
@@ -234,7 +234,7 @@ export default function ProductionHouseDashboardPage() {
                         </>
                       )}
                       <span className="text-zinc-300">•</span>
-                      <span className="text-blue-600 font-medium">{enq.category}</span>
+                      <span className="text-amber-800 font-semibold">{enq.category}</span>
                       <span className="text-zinc-300">•</span>
                       <span>{enq.location}</span>
                     </div>
@@ -372,7 +372,7 @@ export default function ProductionHouseDashboardPage() {
 
                   <div className="p-3.5 space-y-1.5">
                     <div className="flex items-center justify-between text-xs text-zinc-500">
-                      <span className="text-blue-600 font-medium">{item.category}</span>
+                      <span className="text-amber-800 font-semibold">{item.category}</span>
                       <span>{item.clientName}</span>
                     </div>
                     <h4 className="text-xs font-bold text-zinc-900 line-clamp-1">{item.title}</h4>
@@ -422,7 +422,7 @@ export default function ProductionHouseDashboardPage() {
                     <span className="text-sm font-bold text-zinc-900">
                       {formatINR(service.startingPrice)}
                     </span>
-                    <span className="text-[10px] text-blue-600 block font-medium">
+                    <span className="text-[10px] text-amber-800 block font-semibold">
                       ~{service.turnaroundDays}d Delivery
                     </span>
                   </div>
@@ -457,7 +457,7 @@ export default function ProductionHouseDashboardPage() {
                   <select
                     value={studioAvailability}
                     onChange={(e) => setStudioAvailability(e.target.value as any)}
-                    className="w-full bg-white text-xs text-zinc-900 rounded-xl border border-zinc-200 p-2.5 outline-none cursor-pointer focus:border-blue-600 transition-colors"
+                    className="w-full bg-white text-xs text-zinc-900 rounded-xl border border-zinc-200 p-2.5 outline-none cursor-pointer focus:border-yellow-500 transition-colors"
                   >
                     <option value="Available Now">Available Now</option>
                     <option value="Next 2 Weeks">Next 2 Weeks</option>
@@ -515,7 +515,7 @@ export default function ProductionHouseDashboardPage() {
                 placeholder="Camera package, shoot days, sound rights, and delivery format..."
                 value={quoteNotes}
                 onChange={(e) => setQuoteNotes(e.target.value)}
-                className="w-full bg-white text-xs text-zinc-900 rounded-xl border border-zinc-200 p-3 outline-none resize-none focus:border-blue-600 placeholder:text-zinc-400"
+                className="w-full bg-white text-xs text-zinc-900 rounded-xl border border-zinc-200 p-3 outline-none resize-none focus:border-yellow-500 placeholder:text-zinc-400"
               />
             </div>
 
@@ -560,7 +560,7 @@ export default function ProductionHouseDashboardPage() {
               <select
                 value={newCategory}
                 onChange={(e) => setNewCategory(e.target.value as ServiceCategory)}
-                className="w-full bg-white text-xs text-zinc-900 rounded-xl border border-zinc-200 p-2.5 outline-none cursor-pointer focus:border-blue-600 transition-colors"
+                className="w-full bg-white text-xs text-zinc-900 rounded-xl border border-zinc-200 p-2.5 outline-none cursor-pointer focus:border-yellow-500 transition-colors"
               >
                 <option value="Video Production">Video Production</option>
                 <option value="Branding">Branding</option>
@@ -587,7 +587,7 @@ export default function ProductionHouseDashboardPage() {
               placeholder="Creative brief and deliverables..."
               value={newDescription}
               onChange={(e) => setNewDescription(e.target.value)}
-              className="w-full bg-white text-xs text-zinc-900 rounded-xl border border-zinc-200 p-2.5 outline-none resize-none focus:border-blue-600 placeholder:text-zinc-400"
+              className="w-full bg-white text-xs text-zinc-900 rounded-xl border border-zinc-200 p-2.5 outline-none resize-none focus:border-yellow-500 placeholder:text-zinc-400"
             />
           </div>
 

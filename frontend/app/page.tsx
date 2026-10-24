@@ -104,7 +104,7 @@ export default function HomePage() {
           <div className="flex items-center gap-3 text-zinc-500">
             <span>Response SLA: &lt; 2.4h</span>
             <span>•</span>
-            <span className="text-blue-600 font-semibold">Zero Broker Markup</span>
+            <span className="text-amber-800 font-semibold">Zero Broker Markup</span>
           </div>
         </div>
       </div>
@@ -115,8 +115,8 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Left Column: Minimal, punchy headline and fast filters */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-200">
-                <ShieldCheck className="w-3.5 h-3.5 text-blue-600" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-100 text-yellow-950 text-xs font-semibold border border-yellow-300">
+                <ShieldCheck className="w-3.5 h-3.5 text-amber-700" />
                 <span>Verified Commercial Roster • FY 2026</span>
               </div>
 
@@ -154,7 +154,7 @@ export default function HomePage() {
                 className="p-2.5 bg-zinc-50 rounded-2xl border border-zinc-200 shadow-soft space-y-2"
               >
                 <div className="grid grid-cols-1 sm:grid-cols-12 gap-2">
-                  <div className="sm:col-span-6 flex items-center px-3 py-2.5 bg-white rounded-xl border border-zinc-200 focus-within:border-blue-600">
+                  <div className="sm:col-span-6 flex items-center px-3 py-2.5 bg-white rounded-xl border border-zinc-200 focus-within:border-yellow-500">
                     <Search className="w-4 h-4 text-zinc-400 mr-2 shrink-0" />
                     <input
                       type="text"
@@ -195,7 +195,7 @@ export default function HomePage() {
                   </Button>
                 </Link>
                 <Link href="/ai-assistant">
-                  <Button variant="secondary" size="md" leftIcon={<Sparkles className="w-4 h-4 text-blue-600" />}>
+                  <Button variant="secondary" size="md" leftIcon={<Sparkles className="w-4 h-4 text-amber-700" />}>
                     AI Brief Builder
                   </Button>
                 </Link>
@@ -212,12 +212,12 @@ export default function HomePage() {
               <div className="bg-white rounded-3xl p-6 border border-zinc-200 shadow-soft space-y-4">
                 <div className="flex items-center justify-between pb-3 border-b border-zinc-100">
                   <div className="flex items-center gap-2">
-                    <FileCheck2 className="w-4 h-4 text-blue-600" />
+                    <FileCheck2 className="w-4 h-4 text-amber-700" />
                     <h3 className="text-xs font-bold uppercase tracking-wider text-zinc-900">
                       Benchmark Rate Cards
                     </h3>
                   </div>
-                  <span className="text-[11px] font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">
+                  <span className="text-[11px] font-semibold text-yellow-950 bg-yellow-100 border border-yellow-300 px-2 py-0.5 rounded">
                     India Rates (₹ INR)
                   </span>
                 </div>
@@ -228,7 +228,7 @@ export default function HomePage() {
                       <h4 className="font-bold text-zinc-900">Commercial TVC / Ad Film</h4>
                       <p className="text-[11px] text-zinc-500">Director, 4K ARRI Rig, Soundstage & Grade</p>
                     </div>
-                    <span className="font-extrabold text-blue-600 shrink-0 ml-2">
+                    <span className="font-extrabold text-zinc-900 shrink-0 ml-2">
                       ₹8.5L – ₹45L+
                     </span>
                   </div>
@@ -238,7 +238,7 @@ export default function HomePage() {
                       <h4 className="font-bold text-zinc-900">Packaging Offset Run</h4>
                       <p className="text-[11px] text-zinc-500">Heidelberg 6-Color, Dielines, Foil & UV</p>
                     </div>
-                    <span className="font-extrabold text-blue-600 shrink-0 ml-2">
+                    <span className="font-extrabold text-zinc-900 shrink-0 ml-2">
                       ₹1.5L – ₹12L
                     </span>
                   </div>
@@ -248,7 +248,7 @@ export default function HomePage() {
                       <h4 className="font-bold text-zinc-900">Arterial DOOH / Transit</h4>
                       <p className="text-[11px] text-zinc-500">Monthly Concessionaire License & Permits</p>
                     </div>
-                    <span className="font-extrabold text-blue-600 shrink-0 ml-2">
+                    <span className="font-extrabold text-zinc-900 shrink-0 ml-2">
                       ₹8L – ₹35L /mo
                     </span>
                   </div>
@@ -258,7 +258,7 @@ export default function HomePage() {
                       <h4 className="font-bold text-zinc-900">Tabletop High-Speed Reel</h4>
                       <p className="text-[11px] text-zinc-500">Bolt Cinebot & 1000fps Phantom Macro</p>
                     </div>
-                    <span className="font-extrabold text-blue-600 shrink-0 ml-2">
+                    <span className="font-extrabold text-zinc-900 shrink-0 ml-2">
                       ₹3.5L – ₹12L
                     </span>
                   </div>
@@ -278,7 +278,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-blue-600">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-800">
                 Disciplines
               </span>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-zinc-900 mt-1">
@@ -297,14 +297,14 @@ export default function HomePage() {
               <Link
                 key={cat.name}
                 href={`/explore?category=${encodeURIComponent(cat.name)}`}
-                className="p-4 rounded-2xl bg-white border border-zinc-200 hover:border-blue-500 shadow-soft hover:shadow-md transition-all group flex items-center justify-between"
+                className="p-4 rounded-2xl bg-white border border-zinc-200 hover:border-yellow-400 shadow-soft hover:shadow-md transition-all group flex items-center justify-between"
               >
                 <div className="flex items-center gap-3 min-w-0">
-                  <div className="w-9 h-9 rounded-xl bg-zinc-100 text-blue-600 border border-zinc-200 flex items-center justify-center shrink-0 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                  <div className="w-9 h-9 rounded-xl bg-yellow-100/70 text-amber-900 border border-yellow-200/90 flex items-center justify-center shrink-0 group-hover:bg-yellow-300 group-hover:text-zinc-950 transition-colors">
                     {CATEGORY_ICON_MAP[cat.iconName] || <Video className="w-4 h-4" />}
                   </div>
                   <div className="min-w-0">
-                    <h3 className="text-xs sm:text-sm font-bold text-zinc-900 truncate group-hover:text-blue-600 transition-colors">
+                    <h3 className="text-xs sm:text-sm font-bold text-zinc-900 truncate group-hover:text-amber-900 transition-colors">
                       {cat.name}
                     </h3>
                     <span className="text-[11px] text-zinc-500 block">
@@ -313,7 +313,7 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:text-blue-600 group-hover:translate-x-0.5 transition-transform shrink-0" />
+                <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:text-amber-800 group-hover:translate-x-0.5 transition-transform shrink-0" />
               </Link>
             ))}
           </div>
@@ -326,7 +326,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
             <div>
               <div className="flex items-center gap-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-blue-600">
+                <span className="text-xs font-bold uppercase tracking-wider text-amber-800">
                   Roster Index
                 </span>
                 <span className="text-[11px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
@@ -389,7 +389,7 @@ export default function HomePage() {
                         <div className="min-w-0 flex-1">
                           <h3 className="text-sm font-bold text-white truncate">{house.name}</h3>
                           <p className="text-[11px] text-zinc-200 truncate flex items-center gap-1">
-                            <MapPin className="w-3 h-3 text-blue-300" />
+                            <MapPin className="w-3 h-3 text-yellow-300" />
                             {house.location}
                           </p>
                         </div>
@@ -400,7 +400,7 @@ export default function HomePage() {
                     <div className="p-5 space-y-3">
                       <div className="flex items-center justify-between text-xs">
                         <RatingStars rating={house.rating} reviewCount={house.reviewCount} size="sm" />
-                        <span className="font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">
+                        <span className="font-semibold text-yellow-950 bg-yellow-100 border border-yellow-300 px-2 py-0.5 rounded">
                           From {formatINR(house.minBudget)}
                         </span>
                       </div>
@@ -412,7 +412,7 @@ export default function HomePage() {
                       {/* Technical Facility Spec Tag */}
                       {house.equipmentFacilities && house.equipmentFacilities[0] && (
                         <div className="p-2.5 bg-zinc-50 rounded-xl border border-zinc-200/80 text-[11px] text-zinc-700 flex items-center gap-2">
-                          <Cpu className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                          <Cpu className="w-3.5 h-3.5 text-amber-700 shrink-0" />
                           <span className="truncate font-medium">
                             {house.equipmentFacilities[0]}
                           </span>
@@ -461,7 +461,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-blue-600">
+              <span className="text-xs font-bold uppercase tracking-wider text-amber-800">
                 Pipeline
               </span>
               <h2 className="text-2xl font-extrabold text-zinc-900">
@@ -478,7 +478,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="bg-white p-5 rounded-2xl border border-zinc-200 shadow-soft space-y-2.5">
               <div className="flex items-center justify-between text-xs">
-                <span className="font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">
+                <span className="font-semibold text-yellow-950 bg-yellow-100 border border-yellow-300 px-2 py-0.5 rounded">
                   TV Commercial
                 </span>
                 <span className="text-zinc-500">Mumbai</span>
@@ -497,7 +497,7 @@ export default function HomePage() {
 
             <div className="bg-white p-5 rounded-2xl border border-zinc-200 shadow-soft space-y-2.5">
               <div className="flex items-center justify-between text-xs">
-                <span className="font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">
+                <span className="font-semibold text-yellow-950 bg-yellow-100 border border-yellow-300 px-2 py-0.5 rounded">
                   Packaging Run
                 </span>
                 <span className="text-zinc-500">Navi Mumbai</span>
@@ -516,7 +516,7 @@ export default function HomePage() {
 
             <div className="bg-white p-5 rounded-2xl border border-zinc-200 shadow-soft space-y-2.5">
               <div className="flex items-center justify-between text-xs">
-                <span className="font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">
+                <span className="font-semibold text-yellow-950 bg-yellow-100 border border-yellow-300 px-2 py-0.5 rounded">
                   Outdoor (OOH)
                 </span>
                 <span className="text-zinc-500">Delhi NCR</span>
@@ -535,7 +535,7 @@ export default function HomePage() {
 
             <div className="bg-white p-5 rounded-2xl border border-zinc-200 shadow-soft space-y-2.5">
               <div className="flex items-center justify-between text-xs">
-                <span className="font-bold text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded">
+                <span className="font-semibold text-yellow-950 bg-yellow-100 border border-yellow-300 px-2 py-0.5 rounded">
                   High-Speed
                 </span>
                 <span className="text-zinc-500">Bandra West</span>
@@ -559,7 +559,7 @@ export default function HomePage() {
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white border-b border-zinc-200">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-xl mb-6 space-y-1">
-            <span className="text-xs font-bold uppercase tracking-wider text-blue-600">
+            <span className="text-xs font-bold uppercase tracking-wider text-amber-800">
               Safeguards
             </span>
             <h2 className="text-2xl font-extrabold text-zinc-900">

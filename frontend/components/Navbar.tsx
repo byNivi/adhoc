@@ -12,15 +12,12 @@ import {
   Building2, 
   UserCircle2, 
   LogOut, 
-  ChevronDown,
-  Layers,
-  Search,
-  Bot
+  ChevronDown
 } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const pathname = usePathname();
-  const { user, role, isAuthenticated, logout, loginAsDemo } = useAuth();
+  const { role, isAuthenticated, logout, loginAsDemo } = useAuth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [demoMenuOpen, setDemoMenuOpen] = useState(false);
 
@@ -37,12 +34,12 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-blue-500 flex items-center justify-center text-white shadow-xs transition-transform group-hover:scale-105">
-              <span className="font-extrabold text-xl tracking-tighter">ad</span>
+            <div className="w-10 h-10 rounded-xl bg-yellow-300 border border-yellow-400/90 flex items-center justify-center text-zinc-950 shadow-xs transition-transform group-hover:scale-105">
+              <span className="font-black text-xl tracking-tighter">ad</span>
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-black tracking-tight text-zinc-900 font-sans">
-                adhoc<span className="text-blue-600">.</span>
+                adhoc<span className="text-amber-500">.</span>
               </span>
               <span className="text-[10px] uppercase tracking-wider font-semibold text-zinc-500 -mt-1">
                 Production Marketplace
@@ -60,11 +57,11 @@ export const Navbar: React.FC = () => {
                   href={link.href}
                   className={`px-3.5 py-2 rounded-xl text-sm font-medium transition-colors flex items-center gap-1.5 ${
                     isActive
-                      ? 'text-zinc-900 bg-zinc-100 font-semibold border border-zinc-200/80'
+                      ? 'text-zinc-900 bg-yellow-100/60 font-semibold border border-yellow-300/60'
                       : 'text-zinc-600 hover:text-zinc-900 hover:bg-zinc-100/70'
-                  } ${link.highlight ? 'text-blue-600 font-semibold' : ''}`}
+                  } ${link.highlight ? 'text-amber-800 font-semibold' : ''}`}
                 >
-                  {link.highlight && <Sparkles className="w-3.5 h-3.5 text-blue-600" />}
+                  {link.highlight && <Sparkles className="w-3.5 h-3.5 text-amber-600" />}
                   {link.label}
                 </Link>
               );
@@ -97,9 +94,9 @@ export const Navbar: React.FC = () => {
                       loginAsDemo('customer');
                       setDemoMenuOpen(false);
                     }}
-                    className="w-full text-left px-2.5 py-2 text-xs font-medium text-zinc-700 hover:bg-zinc-50 hover:text-zinc-900 rounded-lg transition-colors flex items-center gap-2 cursor-pointer"
+                    className="w-full text-left px-2.5 py-2 text-xs font-medium text-zinc-700 hover:bg-yellow-50 hover:text-amber-900 rounded-lg transition-colors flex items-center gap-2 cursor-pointer"
                   >
-                    <UserCircle2 className="w-4 h-4 text-blue-600" />
+                    <UserCircle2 className="w-4 h-4 text-amber-600" />
                     <span>Customer Demo (Sarah)</span>
                   </button>
                   <button
@@ -107,9 +104,9 @@ export const Navbar: React.FC = () => {
                       loginAsDemo('production_house');
                       setDemoMenuOpen(false);
                     }}
-                    className="w-full text-left px-2.5 py-2 text-xs font-medium text-zinc-700 hover:bg-zinc-50 hover:text-zinc-900 rounded-lg transition-colors flex items-center gap-2 cursor-pointer"
+                    className="w-full text-left px-2.5 py-2 text-xs font-medium text-zinc-700 hover:bg-yellow-50 hover:text-amber-900 rounded-lg transition-colors flex items-center gap-2 cursor-pointer"
                   >
-                    <Building2 className="w-4 h-4 text-blue-600" />
+                    <Building2 className="w-4 h-4 text-amber-600" />
                     <span>Production House (Studio Bombay)</span>
                   </button>
                 </div>
@@ -128,7 +125,7 @@ export const Navbar: React.FC = () => {
                   <Button variant="secondary" size="sm" className="gap-2">
                     {role === 'production_house' ? (
                       <>
-                        <Building2 className="w-4 h-4 text-blue-600" />
+                        <Building2 className="w-4 h-4 text-amber-600" />
                         <span>Studio Dashboard</span>
                         <span className="text-[10px] bg-emerald-50 text-emerald-700 border border-emerald-200 px-1.5 py-0.5 rounded-full font-bold">
                           85%
@@ -136,7 +133,7 @@ export const Navbar: React.FC = () => {
                       </>
                     ) : (
                       <>
-                        <UserCircle2 className="w-4 h-4 text-blue-600" />
+                        <UserCircle2 className="w-4 h-4 text-amber-600" />
                         <span>My Dashboard</span>
                       </>
                     )}
@@ -194,10 +191,10 @@ export const Navbar: React.FC = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2.5 rounded-xl text-sm font-medium text-zinc-700 hover:bg-zinc-100 hover:text-zinc-900 flex items-center justify-between"
+                className="px-3 py-2.5 rounded-xl text-sm font-medium text-zinc-700 hover:bg-yellow-50 hover:text-amber-900 flex items-center justify-between"
               >
                 <span>{link.label}</span>
-                {link.highlight && <Sparkles className="w-4 h-4 text-blue-600" />}
+                {link.highlight && <Sparkles className="w-4 h-4 text-amber-600" />}
               </Link>
             ))}
           </nav>
@@ -249,7 +246,7 @@ export const Navbar: React.FC = () => {
                   loginAsDemo('customer');
                   setMobileMenuOpen(false);
                 }}
-                className="text-xs text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-1.5 rounded-lg font-medium"
+                className="text-xs text-amber-900 bg-yellow-100 border border-yellow-300 px-2.5 py-1.5 rounded-lg font-medium"
               >
                 Demo: Customer
               </button>
@@ -258,7 +255,7 @@ export const Navbar: React.FC = () => {
                   loginAsDemo('production_house');
                   setMobileMenuOpen(false);
                 }}
-                className="text-xs text-blue-700 bg-blue-50 border border-blue-200 px-2.5 py-1.5 rounded-lg font-medium"
+                className="text-xs text-amber-900 bg-yellow-100 border border-yellow-300 px-2.5 py-1.5 rounded-lg font-medium"
               >
                 Demo: Production House
               </button>

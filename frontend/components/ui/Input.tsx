@@ -36,7 +36,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
               ${
                 error
                   ? 'border-rose-400 focus:border-rose-500 focus:ring-2 focus:ring-rose-100'
-                  : 'border-zinc-200 hover:border-zinc-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-100'
+                  : 'border-zinc-200 hover:border-zinc-300 focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200'
               }
               ${className}
             `}

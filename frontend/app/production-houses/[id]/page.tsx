@@ -109,14 +109,14 @@ function ProductionHouseProfileContent() {
                     Verified Studio
                   </span>
                 )}
-                <span className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-50 text-blue-700 border border-blue-200">
+                <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold bg-yellow-100 text-yellow-950 border border-yellow-300">
                   {house.availability}
                 </span>
               </div>
 
               <p className="text-xs sm:text-sm text-zinc-500 flex flex-wrap items-center gap-3">
                 <span className="flex items-center gap-1 text-zinc-700">
-                  <MapPin className="w-3.5 h-3.5 text-blue-600" />
+                  <MapPin className="w-3.5 h-3.5 text-amber-700" />
                   {house.location}
                 </span>
                 <span className="text-zinc-300">•</span>
@@ -203,7 +203,7 @@ function ProductionHouseProfileContent() {
                     </div>
                     <div className="p-3 bg-zinc-50 rounded-xl border border-zinc-200/80">
                       <span className="text-[11px] text-zinc-500 block">Turnaround SLA</span>
-                      <span className="text-xs sm:text-sm font-bold text-blue-600">
+                      <span className="text-xs sm:text-sm font-bold text-zinc-900">
                         &lt; {house.responseRateHours}h Proposal
                       </span>
                     </div>
@@ -221,7 +221,7 @@ function ProductionHouseProfileContent() {
                             key={idx}
                             className="p-2.5 bg-zinc-50 rounded-xl border border-zinc-200/80 flex items-center gap-2"
                           >
-                            <span className="w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0" />
+                            <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 shrink-0" />
                             <span className="truncate">{eq}</span>
                           </div>
                         ))}
@@ -257,7 +257,7 @@ function ProductionHouseProfileContent() {
                       <h3 className="text-base font-bold text-zinc-900">Featured Project</h3>
                       <button
                         onClick={() => setActiveTab('portfolio')}
-                        className="text-xs font-medium text-blue-600 hover:text-blue-700 transition-colors cursor-pointer"
+                        className="text-xs font-semibold text-amber-800 hover:text-amber-900 transition-colors cursor-pointer"
                       >
                         View All
                       </button>
@@ -270,7 +270,7 @@ function ProductionHouseProfileContent() {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-5 text-white">
-                        <span className="text-[11px] font-bold text-blue-300 uppercase tracking-wider mb-1">
+                        <span className="text-[11px] font-bold text-yellow-300 uppercase tracking-wider mb-1">
                           {house.portfolio[0].category} • {house.portfolio[0].clientName}
                         </span>
                         <h4 className="text-base font-bold">{house.portfolio[0].title}</h4>
@@ -301,7 +301,7 @@ function ProductionHouseProfileContent() {
                     <div className="space-y-1.5 flex-1">
                       <div className="flex items-center gap-2">
                         <h4 className="text-sm font-bold text-zinc-900">{service.name}</h4>
-                        <span className="text-[11px] text-blue-700 bg-blue-50 border border-blue-200 px-2 py-0.5 rounded-md font-medium">
+                        <span className="text-[11px] font-semibold text-yellow-950 bg-yellow-100 border border-yellow-300 px-2 py-0.5 rounded-md">
                           ~{service.turnaroundDays}d
                         </span>
                       </div>
@@ -386,17 +386,17 @@ function ProductionHouseProfileContent() {
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end p-3">
-                          <span className="text-[10px] font-semibold text-blue-300 uppercase tracking-wider">
+                          <span className="text-[10px] font-semibold text-yellow-300 uppercase tracking-wider">
                             {item.clientName}
                           </span>
                         </div>
                       </div>
                       <div className="p-4 space-y-1.5">
                         <div className="flex items-center justify-between text-xs text-zinc-500">
-                          <span className="text-blue-600 font-medium">{item.category}</span>
+                          <span className="text-amber-800 font-semibold">{item.category}</span>
                           <span>{item.year}</span>
                         </div>
-                        <h4 className="text-sm font-bold text-zinc-900 line-clamp-1 group-hover:text-blue-600 transition-colors">
+                        <h4 className="text-sm font-bold text-zinc-900 line-clamp-1 group-hover:text-amber-900 transition-colors">
                           {item.title}
                         </h4>
                         <p className="text-xs text-zinc-600 line-clamp-2">
@@ -454,7 +454,7 @@ function ProductionHouseProfileContent() {
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 rounded-full bg-blue-50 text-blue-700 font-bold text-xs flex items-center justify-center border border-blue-200">
+                          <div className="w-8 h-8 rounded-full bg-yellow-100 text-yellow-950 font-bold text-xs flex items-center justify-center border border-yellow-300">
                             {rev.authorName.charAt(0)}
                           </div>
                           <div>
@@ -476,7 +476,7 @@ function ProductionHouseProfileContent() {
                         <span>Project:</span>
                         <span className="text-zinc-700">{rev.projectName}</span>
                         <span>•</span>
-                        <span className="text-blue-600">{rev.category}</span>
+                        <span className="text-amber-800 font-medium">{rev.category}</span>
                       </div>
                     </div>
                   ))}
@@ -489,7 +489,7 @@ function ProductionHouseProfileContent() {
           <div className="lg:col-span-4 sticky top-24 space-y-4">
             <div className="bg-white rounded-2xl p-6 border border-zinc-200 shadow-soft space-y-4">
               <div>
-                <span className="text-[10px] font-bold text-blue-600 uppercase tracking-wider block mb-1">
+                <span className="text-[10px] font-bold text-amber-800 uppercase tracking-wider block mb-1">
                   Direct Intake
                 </span>
                 <h3 className="text-base font-bold text-zinc-900">
@@ -544,18 +544,18 @@ function ProductionHouseProfileContent() {
                 Direct Coordinates
               </h4>
               <p className="flex items-center gap-2 text-zinc-700">
-                <Mail className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                <Mail className="w-3.5 h-3.5 text-amber-700 shrink-0" />
                 <span className="truncate">{house.contactEmail}</span>
               </p>
               {house.phone && (
                 <p className="flex items-center gap-2 text-zinc-700">
-                  <Phone className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                  <Phone className="w-3.5 h-3.5 text-amber-700 shrink-0" />
                   <span>{house.phone}</span>
                 </p>
               )}
               {house.website && (
                 <p className="flex items-center gap-2 text-zinc-700">
-                  <Globe className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                  <Globe className="w-3.5 h-3.5 text-amber-700 shrink-0" />
                   <span className="truncate">{house.website}</span>
                 </p>
               )}
@@ -589,7 +589,7 @@ function ProductionHouseProfileContent() {
             </div>
             <div className="p-6 space-y-3">
               <div className="flex items-center justify-between text-xs">
-                <span className="font-bold text-blue-600 uppercase tracking-wider">
+                <span className="font-bold text-amber-800 uppercase tracking-wider">
                   {selectedPortfolioItem.category} • {selectedPortfolioItem.clientName}
                 </span>
                 <span className="text-zinc-500">{selectedPortfolioItem.year}</span>
